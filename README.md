@@ -16,8 +16,8 @@ Smart automation with Home Assistant that, when no one is home, automatically po
 	- [📦 CONTENT](#-content)
 	- [🖋️ SETUP](#️-setup)
 		- [👨‍👩‍👧‍👦 FAMILY](#-family)
-		- [STRATEGY](#strategy)
-		- [AUTOMATION](#automation)
+		- [🧩 STRATEGY](#-strategy)
+		- [📎 AUTOMATION](#-automation)
 		- [✅ NO PRESENCE AUTOMATION](#-no-presence-automation)
 		- [✅ PRESENCE DETECTED AUTOMATION](#-presence-detected-automation)
 
@@ -47,7 +47,7 @@ family:
    - person.user6
 ```
 
-### STRATEGY
+### 🧩 STRATEGY
 
 Home Assistant automations allow switching, turning off, or setting devices based on labels.<br>
 My setup doesn’t just control lights or TVs — it also powers off nearly all electric appliances like coffee machines, hoods, monitors, etc.  
@@ -59,7 +59,7 @@ Some devices should turn back on when someone returns — so I created **two lab
 > Label: **Presence Detected** – *used to turn on devices*  
 ![img](/img/ima_prisastwie.png.png)
 
-### AUTOMATION
+### 📎 AUTOMATION
 
 I include all device types in my automations. Home Assistant doesn’t show labels until a device is assigned one — but I add them manually, which is easier than editing the automation each time.  
 At the end of each automation I add:
