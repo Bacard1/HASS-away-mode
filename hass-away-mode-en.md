@@ -1,10 +1,9 @@
 ![BANNER](/img/banner.png)
 
 # 🔋 HASS-AWAY-MODE / NO PRESENCE
-
 [![PayPal Donate](https://img.shields.io/badge/PayPal-Donate-blue?logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=AAWFZVF2XCP5A)
 ![Script](https://img.shields.io/badge/logo-yaml-green?logo=yaml)
-[![БЪЛГАРСКИ](https://img.shields.io/badge/БЪЛГАРСКИ-език-green?logo=translate&labelColor=gray&style=flat-square&link=https://example.com/bg)](BG.md)
+[![ENGLISH](https://img.shields.io/badge/ENGLISH-language-green?logo=translate&labelColor=gray&style=flat-square&link=https://example.com/bg)](README.md)
 
 Smart automation with Home Assistant that, when no one is home, automatically powers down media devices, cuts power to unused electronics, and reduces temperature to save energy.
 
@@ -13,18 +12,15 @@ Smart automation with Home Assistant that, when no one is home, automatically po
 ## 📦 CONTENT
 
 - [🔋 HASS-AWAY-MODE / NO PRESENCE](#-hass-away-mode--no-presence)
-	- [📦 CONTENT](#-content)
-	- [🖋️ SETUP](#️-setup)
-		- [👨‍👩‍👧‍👦 FAMILY](#-family)
-		- [STRATEGY](#strategy)
-		- [AUTOMATION](#automation)
-		- [✅ NO PRESENCE AUTOMATION](#-no-presence-automation)
-		- [✅ PRESENCE DETECTED AUTOMATION](#-presence-detected-automation)
+  - [📦 CONTENT](#-content)
+  - [🖋️ SETUP](#️-setup)
+    - [👨‍👩‍👧‍👦 FAMILY:](#-family)
+    - [STRATEGY:](#strategy)
+    - [AUTOMATION:](#automation)
 
 ## 🖋️ SETUP
 
-### 👨‍👩‍👧‍👦 FAMILY
-
+### 👨‍👩‍👧‍👦 FAMILY:
 I created a group to combine all people in the household for easier automation logic.
 
 > [!TIP]
@@ -39,16 +35,15 @@ family:
   name: Family
   icon: mdi:home-heart
   entities:
-   - person.user1
-   - person.user2
-   - person.user3
-   - person.user4
-   - person.user5
-   - person.user6
+    - person.user1
+    - person.user2
+    - person.user3
+    - person.user4
+    - person.user5
+    - person.user6
 ```
 
-### STRATEGY
-
+### STRATEGY:
 Home Assistant automations allow switching, turning off, or setting devices based on labels.<br>
 My setup doesn’t just control lights or TVs — it also powers off nearly all electric appliances like coffee machines, hoods, monitors, etc.  
 Some devices should turn back on when someone returns — so I created **two labels**:
@@ -59,14 +54,13 @@ Some devices should turn back on when someone returns — so I created **two lab
 > Label: **Presence Detected** – *used to turn on devices*  
 ![img](/img/ima_prisastwie.png.png)
 
-### AUTOMATION
-
+### AUTOMATION:
 I include all device types in my automations. Home Assistant doesn’t show labels until a device is assigned one — but I add them manually, which is easier than editing the automation each time.  
 At the end of each automation I add:
 
 ```yaml
 target:
-  label_id: no_presence
+  label_id: bez_prisstvie
 ```
 
 > Result:
@@ -75,7 +69,7 @@ target:
 ### ✅ NO PRESENCE AUTOMATION
 
 ```yaml
-alias: NO PRESENCE
+alias: No Presence
 description: ""
 triggers:
   - trigger: state
@@ -111,44 +105,44 @@ actions:
     metadata: {}
     data: {}
     target:
-      label_id: no_presence
+      label_id: bez_prisstvie
   - action: climate.set_temperature
     metadata: {}
     data:
       hvac_mode: "off"
     target:
-      label_id: no_presence
+      label_id: bez_prisstvie
   - action: media_player.turn_off
     metadata: {}
     data: {}
     target:
-      label_id: no_presence
+      label_id: bez_prisstvie
   - action: switch.turn_off
     metadata: {}
     data: {}
     target:
-      label_id: no_presence
+      label_id: bez_prisstvie
   - action: light.turn_off
     metadata: {}
     data: {}
     target:
-      label_id: no_presence
+      label_id: bez_prisstvie
   - action: button.press
     metadata: {}
     data: {}
     target:
-      label_id: no_presence
+      label_id: bez_prisstvie
   - action: automation.turn_off
     metadata: {}
     data:
       stop_actions: true
     target:
-      label_id: no_presence
+      label_id: bez_prisstvie
   - action: script.turn_on
     metadata: {}
     data: {}
     target:
-      label_id: no_presence
+      label_id: bez_prisstvie
 mode: restart
 ```
 
@@ -162,7 +156,7 @@ mode: restart
 ### ✅ PRESENCE DETECTED AUTOMATION
 
 ```yaml
-alias: "PRESENCE DETECTED "
+alias: Presence Detected
 description: ""
 triggers:
   - trigger: state
@@ -179,44 +173,44 @@ actions:
     metadata: {}
     data: {}
     target:
-      label_id: presence_detected
+      label_id: ima_prisstvie
   - action: climate.set_temperature
     metadata: {}
     data:
       hvac_mode: "off"
     target:
-      label_id: presence_detected
+      label_id: ima_prisstvie
   - action: media_player.turn_on
     metadata: {}
     data: {}
     target:
-      label_id: presence_detected
+      label_id: ima_prisstvie
   - action: switch.turn_on
     metadata: {}
     data: {}
     target:
-      label_id: presence_detected
+      label_id: ima_prisstvie
   - action: light.turn_on
     metadata: {}
     data: {}
     target:
-      label_id: presence_detected
+      label_id: ima_prisstvie
   - action: button.press
     metadata: {}
     data: {}
     target:
-      label_id: presence_detected
+      label_id: ima_prisstvie
   - action: automation.turn_on
     metadata: {}
     data:
       stop_actions: true
     target:
-      label_id: presence_detected
+      label_id: ima_prisstvie
   - action: script.turn_on
     metadata: {}
     data: {}
     target:
-      label_id: presence_detected
+      label_id: ima_prisstvie
 mode: restart
 ```
 
