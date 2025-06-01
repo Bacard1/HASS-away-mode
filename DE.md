@@ -1,6 +1,3 @@
-Hier ist die übersetzte Version des Dokuments auf Deutsch:
-
-
 ![BANNER](/img/banner.png)
 
 # 🔋 HASS-AWAY-MODE / ABWESENHEITSMODUS
