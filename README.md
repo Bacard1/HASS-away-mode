@@ -2,9 +2,13 @@
 
 # 🔋 HASS-AWAY-MODE / NO PRESENCE
 
-[![PayPal Donate](https://img.shields.io/badge/PayPal-Donate-blue?logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=AAWFZVF2XCP5A)
+[![Home Assistant](https://img.shields.io/badge/🏠_Home_Assistant-41BDF5?logo=homeassistant)](https://www.home-assistant.io/) [![Donate via PayPal](https://img.shields.io/badge/PayPal-Donate-blue?logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=AAWFZVF2XCP5A)
 ![Script](https://img.shields.io/badge/logo-yaml-green?logo=yaml)
-[![БЪЛГАРСКИ](https://img.shields.io/badge/БЪЛГАРСКИ-език-green?logo=translate&labelColor=gray&style=flat-square&link=https://example.com/bg)](BG.md)
+[![Български](https://img.shields.io/badge/BG_Български-език-green?logo=translate&labelColor=gray&style=flat-square&link=https://example.com/bg
+)](BG.md)
+[![Deutch](https://img.shields.io/badge/DE_Deutsche-sprache-green?logo=translate&labelColor=gray&style=flat-square&link=https://example.com/bg
+)](DE.md)
+[![English](https://img.shields.io/badge/EN_English-language-green?logo=translate&labelColor=gray&style=flat-square&link=https://example.com/bg)](README.md)
 
 Smart automation with Home Assistant that, when no one is home, automatically powers down media devices, cuts power to unused electronics, and reduces temperature to save energy.
 
@@ -13,13 +17,13 @@ Smart automation with Home Assistant that, when no one is home, automatically po
 ## 📦 CONTENT
 
 - [🔋 HASS-AWAY-MODE / NO PRESENCE](#-hass-away-mode--no-presence)
-	- [📦 CONTENT](#-content)
-	- [🖋️ SETUP](#️-setup)
-		- [👨‍👩‍👧‍👦 FAMILY](#-family)
-		- [🧩 STRATEGY](#-strategy)
-		- [📎 AUTOMATION](#-automation)
-		- [✅ NO PRESENCE AUTOMATION](#-no-presence-automation)
-		- [✅ PRESENCE DETECTED AUTOMATION](#-presence-detected-automation)
+  - [📦 CONTENT](#-content)
+  - [🖋️ SETUP](#️-setup)
+    - [👨‍👩‍👧‍👦 FAMILY](#-family)
+    - [🧩 STRATEGY](#-strategy)
+    - [📎 AUTOMATION](#-automation)
+    - [✅ NO PRESENCE AUTOMATION](#-no-presence-automation)
+    - [✅ PRESENCE DETECTED AUTOMATION](#-presence-detected-automation)
 
 ## 🖋️ SETUP
 

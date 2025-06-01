@@ -1,9 +1,13 @@
 ![BANNER](/img/banner.png)
 
 # 🔋 HASS-AWAY-MODE / БЕЗ ПРИСЪСТВИЕ
-[![PayPal дарение](https://img.shields.io/badge/PayPal-Дари-синьо?logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=AAWFZVF2XCP5A)
-![Скрипт](https://img.shields.io/badge/logo-yaml-green?logo=yaml)
-[![ENGLISH](https://img.shields.io/badge/ENGLISH-language-green?logo=translate&labelColor=gray&style=flat-square&link=https://example.com/bg)](README.md)
+[![Home Assistant](https://img.shields.io/badge/🏠_Home_Assistant-41BDF5?logo=homeassistant)](https://www.home-assistant.io/) [![Donate via PayPal](https://img.shields.io/badge/PayPal-Donate-blue?logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=AAWFZVF2XCP5A)
+![Script](https://img.shields.io/badge/logo-yaml-green?logo=yaml)
+[![Български](https://img.shields.io/badge/BG_Български-език-green?logo=translate&labelColor=gray&style=flat-square&link=https://example.com/bg
+)](BG.md)
+[![Deutch](https://img.shields.io/badge/DE_Deutsche-sprache-green?logo=translate&labelColor=gray&style=flat-square&link=https://example.com/bg
+)](DE.md)
+[![English](https://img.shields.io/badge/EN_English-language-green?logo=translate&labelColor=gray&style=flat-square&link=https://example.com/bg)](README.md)
 
 Умна автоматизация с Home Assistant, която при отсъствие автоматично изключва медийни устройства, прекъсва захранването на неизползвани уреди и намалява температурата за пестене на енергия.
 
@@ -14,11 +18,11 @@
 ## 📦 СЪДЪРЖАНИЕ
 
 - [🔋 HASS-AWAY-MODE / БЕЗ ПРИСЪСТВИЕ](#-hass-away-mode--без-присъствие)
-	- [📦 СЪДЪРЖАНИЕ](#-съдържание)
-	- [🖋️ ПОДГОТОВКА](#️-подготовка)
-		- [👨‍👩‍👧‍👦 ФАМИЯ:](#-фамия)
-		- [🧩 СТРАТЕГИЯ:](#-стратегия)
-		- [📎 АВТОМАТИЗАЦИЯ:](#-автоматизация)
+  - [📦 СЪДЪРЖАНИЕ](#-съдържание)
+  - [🖋️ ПОДГОТОВКА](#️-подготовка)
+    - [👨‍👩‍👧‍👦 ФАМИЯ:](#-фамия)
+    - [🧩 СТРАТЕГИЯ:](#-стратегия)
+    - [📎 АВТОМАТИЗАЦИЯ:](#-автоматизация)
 
 ## 🖋️ ПОДГОТОВКА
 
